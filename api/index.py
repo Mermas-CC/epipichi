@@ -2,31 +2,15 @@
 
 from fastapi import FastAPI, Request, Body, Query
 import pickle
-import tensorflow as tf
-from tensorflow.keras.preprocessing.sequence import pad_sequences
-from tensorflow.keras.models import load_model
+from keras.preprocessing.sequence import pad_sequences
+from keras.models import load_model
 import re
 import re
 import random
 
 # TensorFlow and Keras imports
-import tensorflow as tf
-from tensorflow import keras
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.callbacks import History
-from tensorflow.keras.layers import (
-    Input,
-    Embedding,
-    LSTM,
-    GRU,  # Choose GRU or LSTM for your model
-    LayerNormalization,
-    Dense,
-    Dropout,
-    Bidirectional,  # Optional for Bidirectional models
-)
-from tensorflow.keras.utils import plot_model
-from tensorflow.keras.preprocessing.text import Tokenizer
-from tensorflow.keras.preprocessing.sequence import pad_sequences
+
+
 
 # Optional imports for data manipulation and preprocessing (uncomment if needed)
 import numpy as np
